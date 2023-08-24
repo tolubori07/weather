@@ -1,0 +1,36 @@
+main {
+    position: absolute;
+    top:20%;
+    left: 0%;
+    color: #18233e;
+    background-color: #1d1b1b;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+
+  }
+  body{
+    background-color: #1d1b1b;
+  }
+.temp{
+    margin-bottom: 10%;
+}  
+.items{
+    background-color: #3f3d3d82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sun{
+    width: 10%;
+}
+.arrow{
+    background-color: rgba(41, 40, 40, 0.382);
+    height: 3rem;
+    width: 7%;
+    fill: white;
+}

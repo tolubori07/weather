@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  width: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 3%;
+  background-color: #18233e;
+}
+.heading {
+  background-image: linear-gradient(45deg, rgb(170, 123, 123) 50%, #decea1 50%);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  float: left;
+}
+input[type="text"] {
+  color: white;
+}
+
