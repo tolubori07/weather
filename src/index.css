@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face{
     font-family: comfortaa;
-    src: url('./Comfortaa-VariableFont_wght.ttf');
+    src: url('/Comfortaa-VariableFont_wght.ttf');
 }
 body{
 font-family: comfortaa;
