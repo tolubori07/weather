@@ -63,7 +63,7 @@ function WeatherInfo({ searchLocation }) {
                                 <p>Wind Speed: {searchLocation.wind.speed} mph</p>
                             </div>
                             <div className="items rounded-lg">
-                                <img src="./compass-up-arrow.svg" alt="" className="arrow  rounded-xl " style={windRotation}/>
+                                <img src="./compass-up-arrow.svg" alt="" className="arrow  rounded-xl rotate-[{windRotation}]" />
                                 <p>Wind direction: {searchLocation.wind.deg}deg</p>
                             </div>
                         </div>
