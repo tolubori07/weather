@@ -19,9 +19,6 @@ function WeatherInfo({ searchLocation }) {
         const formattedSunsetTime = sunsetTimestamp
         ? format(new Date(sunsetTimestamp * 1000), "h:mm a")
         : "N/A";
-        const windRotation = {
-            transform: `rotate(${searchLocation.wind.deg}deg)`,
-        };
     return (
         <main>
             <div className="weather-info">
@@ -63,7 +60,7 @@ function WeatherInfo({ searchLocation }) {
                                 <p>Wind Speed: {searchLocation.wind.speed} mph</p>
                             </div>
                             <div className="items rounded-lg">
-                                <img src="./compass-up-arrow.svg" alt="" className="arrow  rounded-xl rotate-[{windRotation}]" />
+                                <img src="./compass-up-arrow.svg" alt="" className="arrow  rounded-xl " />
                                 <p>Wind direction: {searchLocation.wind.deg}deg</p>
                             </div>
                         </div>
