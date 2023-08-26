@@ -41,14 +41,14 @@ function WeatherInfo({ searchLocation }) {
                                 <p>pressure: {searchLocation.main.pressure} pa</p>
                             </div>
                             <div className="items rounded-lg">
-                                <p className="ml-20">Sunrise: {formattedSunriseTime}</p> 
+                                <p className="ml-[5%]">Sunrise: {formattedSunriseTime}</p> 
                                 <br />
-                                <img src="./sunrise.png" alt="" className="sun h-20" />
+                                <img src="./sunrise.png" alt="" className="sun h-[50%] w-[10%]" />
                             </div>
                             <div className="items rounded-lg">
-                                <p className="ml-20">Sunset: {formattedSunsetTime}</p> 
+                                <p className="ml-[5%]">Sunset: {formattedSunsetTime}</p> 
                                 <br />
-                                <img src="./sunrise.png" alt="" className="sun h-20" />
+                                <img src="./sunrise.png" alt="" className="sun h-[50%] w-[10%]" />
                             </div>
                             <div className="items rounded-lg">
                                 <p>Visibility: {searchLocation.visibility/1000}Km</p>
