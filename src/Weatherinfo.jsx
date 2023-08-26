@@ -24,9 +24,9 @@ function WeatherInfo({ searchLocation }) {
             <div className="weather-info">
                 {searchLocation.main && (
                     <>
-                        <div className="temp">
+                        <div className="temp  text-center">
                             <h2 >Weather in {searchLocation.name}, {searchLocation.sys.country}</h2>
-                            <h1 className="text-8xl my-4">{searchLocation.main.temp}°C</h1>
+                            <h1 className="text-8xl">{searchLocation.main.temp}°C</h1>
                             <h1>Max {searchLocation.main.temp_max}°C</h1>
                             <h1>Min {searchLocation.main.temp_min}°C</h1>
                             <h1>Feels Like {searchLocation.main.feels_like}°C</h1>
