@@ -27,7 +27,7 @@ function App() {
     }, []);
 
     return (
-        <div className="App my-auto w-[98%]">
+        <div className="App w-[98%]">
             <Header get_weather={get_weather} />
             <WeatherInfo searchLocation={searchLocation} />
         </div>
