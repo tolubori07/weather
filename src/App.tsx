@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Header from "./header";
 import WeatherInfo, { type WeatherData } from "./Weatherinfo";
 
+const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
+
 function App() {
     const [searchLocation, setSearchLocation] = useState<WeatherData | null>(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +15,11 @@ function App() {
         setIsLoading(true);
         setError("");
         try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(location)}&appid=c5b6cf05e8525851c86c0d72366bded7&units=metric`);
+            if (!apiKey) {
+                throw new Error("Weather API key is not configured. Set VITE_OPENWEATHER_API_KEY in your .env file.");
+            }
+
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(location)}&appid=${apiKey}&units=metric`);
             if (!response.ok) {
                 throw new Error("We couldn't find that place. Check the spelling and try again.");
             }
